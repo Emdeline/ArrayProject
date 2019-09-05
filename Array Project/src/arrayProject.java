@@ -12,12 +12,15 @@ public class arrayProject
 				poloRoster[3] = "Gray";
 				poloRoster[4] = "White";
 				
+				System.out.println("Your choices for a polo color are: " );
+				
 				for (String s : poloRoster)
 					{
-						System.out.println("Your choices for a polo color are..." + s);
-						System.out.println("You should wear the color " + s + " today!");
-
+						System.out.println(s);	
 					}
+				
+				int randomNumber = (int) (Math.random() * poloRoster.length);
+				System.out.println("You should wear " + poloRoster[randomNumber] + " today!");
 			}
 
 	}
